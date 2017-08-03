@@ -5,6 +5,14 @@
 [github]
 	user = lelemmen
 
+[alias]
+	s = status
+	a = add .
+	m = commit -m 
+
+
 [core]
         editor = vim
-        excludesfile = ~/.gitignore_global
+	excludesfile = ~/.gitignore_global
+
+

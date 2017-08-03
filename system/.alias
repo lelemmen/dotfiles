@@ -2,6 +2,7 @@
 
 alias resource="source ~/.bash_profile"
 alias rr='rm -rf'
+alias g='git'
 
 ## Give a better version of ls
 # -G: enable colorized output (equivalent to export CLICOLOR=1)
