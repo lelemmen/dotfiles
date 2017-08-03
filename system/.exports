@@ -11,12 +11,12 @@
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
 ## Add some new directory environment variables
-export ARCH_PROJ=~/Documents/Archief/Projecten_Gearchiveerd/
+export ARCH_PROJ=~/Documents/Archief/Projecten_Gearchiveerd
 
-export DOCT_TYPE=~/Documents/Projecten/Doctoraat/Typesetten/
+export DOCT_TYPE=~/Documents/Projecten/Doctoraat/Typesetten
 export SOFTWARE_DIR=~/Software
-export PERS_TEMP_DIR=$SOFTWARE_DIR/tmp/
-export DOTFILES_DIR=$SOFTWARE_DIR/.dotfiles/
+export PERS_TEMP_DIR=$SOFTWARE_DIR/tmp
+export DOTFILES_DIR=$SOFTWARE_DIR/.dotfiles
 
 ## GQCG infrastructure
 export GQCG_COLL_SERVER=llemmens@157.193.91.156
