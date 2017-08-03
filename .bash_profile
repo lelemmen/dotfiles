@@ -1,4 +1,7 @@
-for DOTFILE in 'find ~/Documents/Projecten/Persoonlijk/.dotfiles'
-do
-	[ -f "$DOTFILE$" ] && source "$DOTFILE"
+## Source all the dotfiles
+for DOTFILE in ~/Documents/Projecten/Persoonlijk/.dotfiles/.{env,alias,function}; do
+	# If the DOTFILE is a regular file, source it to the current shell
+	[ -f "$DOTFILE" ] && source "$DOTFILE"
 done
+
+
