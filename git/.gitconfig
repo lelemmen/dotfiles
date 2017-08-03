@@ -9,7 +9,7 @@
 	s = status
 	a = add .
 	m = commit -m 
-
+	p = push
 
 [core]
         editor = vim
