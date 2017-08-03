@@ -1,0 +1,30 @@
+### Commands that are too complex for an alias
+
+## Make a directory and move into it
+function mkcd() {
+	mkdir "$1" && cd "$1"
+}
+
+
+## Smart extract
+function extract() {
+	# If the argument is a regular file, move into cases
+	if [ -f "$1" ]; then
+		case "$1" in
+			*.tar)		tar -zxvf "$1"			;;
+			*.tar.lz)	lzip -d "$1" && extract "$1"	;;
+			*.zip)		unzip "$1"			;;
+			*)		echo "'$1' cannot be extracted via extract()" ;;
+		esac
+	else
+		echo "'$1' is not a valid file to extract"
+	fi
+}
+
+
+## Open manpages via pdf
+function manpdf() {
+	# man -t: format output
+	# open -a: specify application -f: reads input from standard input
+	man -t "$1" | open -fa /Applications/Preview.app
+}

@@ -1,0 +1,15 @@
+### Changes to the prompt
+
+## Colors in the primary prompt (PS1)
+# http://tldp.org/HOWTO/Bash-Prompt-HOWTO/index.html
+# \u is expanded in the current username
+# \h is expanded in the hostname up to the first "."
+# \w is expanded in the current working directory
+# non-printing escape sequences are enclosed in \[\033[____\]
+CYAN='\[\033[0;36m\]'           # cyan
+GREEN='\[\033[0;32m\]'          # green
+YELLOW='\[\033[0;33m\]'         # yellow
+NO_COLOR='\[\033[m\]'           # color reset
+
+# e.g. LaurentLemmens@MacBook-Pro-van-Laurent:~$
+export PS1="${CYAN}\u${NO_COLOR}@${GREEN}\h${NO_COLOR}:${YELLOW}\w${NO_COLOR}\$ "

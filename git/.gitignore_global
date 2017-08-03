@@ -1,0 +1,13 @@
+## MacOS generated files
+.DS_Store
+.DS_Store?
+
+## TeX files
+.aux
+.bbl
+.blg
+.log
+.out
+.toc
+.nav
+.snm

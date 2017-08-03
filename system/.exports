@@ -1,0 +1,32 @@
+### All exports
+
+## Defining the color scheme for ls
+# http://osxdaily.com/2012/02/21/add-color-to-the-terminal-in-mac-os-x/
+# LSCOLORS = concatenation of pairs "fb" where f is a foreground color and b is a background color
+# a-h are colors, A-H are bold colors, x is default
+# 1. directory, 2. symbolic link, 3. socket, 4. pipe, 5. executable, 6. block special, 7. character special
+# 8. executable with setuid bit set, 9. executable with setgid bit set
+# 10. directory writable to others, with sticky bit, 11. directory writable to others, without sticky bit
+# default is LSCOLORS = "exfxcxdxbxegedabagacad"
+export LSCOLORS=ExFxBxDxCxegedabagacad
+
+## Enable MacPorts: append the MacPorts executable paths to the default path.
+# The MacPorts paths are appended at the front, so the MacPorts libraries will take precedence
+export PATH=/opt/local/bin:opt/local/sbin:$PATH
+
+## Enable HORTON
+export PATH=${HOME}/Library/Python/2.7/bin:${PATH}
+
+## Add some new directory environment variables
+export ARCH_PROJ=~/Documents/Archief/Projecten_Gearchiveerd/
+export DOCT_TYPE=~/Documents/Projecten/Doctoraat/Typesetten/
+export PERS_TEMP_DIR=~/Documents/Software/tmp/
+
+export DOTFILES_DIR=~/Documents/Software/.dotfiles/
+
+## GQCG infrastructure
+export GQCG_COLL_SERVER=llemmens@157.193.91.156
+export GQCG_COMP_SERVER=llemmens@157.193.91.86
+
+## Enable OpenMPI
+export TMPDIR=/tmp

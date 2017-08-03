@@ -1,0 +1,10 @@
+[user]
+        name = Laurent Lemmens
+	email = laurent.lemmens@ugent.be
+
+[github]
+	user = lelemmen
+
+[core]
+        editor = vim
+        excludesfile = ~/.gitignore_global

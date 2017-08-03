@@ -1,0 +1,19 @@
+### Defining shortcuts for commands
+
+alias resource="source ~/.bash_profile"
+alias rr='rm -rf'
+
+## Give a better version of ls
+# -G: enable colorized output (equivalent to export CLICOLOR=1)
+# -F: better characterized output (/ after directories, * after executable, @ after symbolic link)
+# -h: better readable: use kB, MB, ...
+# -a: all
+alias ls='ls -GFha'
+
+## Directory navigation
+alias ..="cd .." 		# Move up one directory
+alias ...="cd ../.." 		# Move up two directories
+alias ....="cd ../../.." 	# Move up three directories
+
+alias -- -="cd - >/dev/null"	# Revisit the previous directory, redirecting output to the null device
+				# Doesn't work with alias - (since bash then thinks a flag is missing)

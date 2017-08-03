@@ -1,5 +1,0 @@
-## Directory navigation
-alias ..="cd .." 		# Move up one directory
-alias ...="cd ../.." 		# Move up two directories
-alias ....="cd ../../.." 	# Move up three directories
-alias ??="cd - >/dev/null"	# Revisit the previous directory, redirecting output to the null device
