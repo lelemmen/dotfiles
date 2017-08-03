@@ -10,19 +10,13 @@
 # default is LSCOLORS = "exfxcxdxbxegedabagacad"
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
-## Enable MacPorts: append the MacPorts executable paths to the default path.
-# The MacPorts paths are appended at the front, so the MacPorts libraries will take precedence
-export PATH=/opt/local/bin:opt/local/sbin:$PATH
-
-## Enable HORTON
-export PATH=${HOME}/Library/Python/2.7/bin:${PATH}
-
 ## Add some new directory environment variables
 export ARCH_PROJ=~/Documents/Archief/Projecten_Gearchiveerd/
-export DOCT_TYPE=~/Documents/Projecten/Doctoraat/Typesetten/
-export PERS_TEMP_DIR=~/Documents/Software/tmp/
 
-export DOTFILES_DIR=~/Documents/Software/.dotfiles/
+export DOCT_TYPE=~/Documents/Projecten/Doctoraat/Typesetten/
+export SOFTWARE_DIR=~/Software
+export PERS_TEMP_DIR=$SOFTWARE_DIR/tmp/
+export DOTFILES_DIR=$SOFTWARE_DIR/.dotfiles/
 
 ## GQCG infrastructure
 export GQCG_COLL_SERVER=llemmens@157.193.91.156
