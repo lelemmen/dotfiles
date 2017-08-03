@@ -1,6 +1,6 @@
 "Enable colors in Vim
 syntax on
-colorscheme one
+colorscheme jellybeans
 
 "Load the plugin files for the plugin INDENT
 "Enable file type detection

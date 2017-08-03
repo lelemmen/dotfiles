@@ -11,5 +11,4 @@ ln -sfv $PWD/runcom/.vimrc ~
 ln -sfv $PWD/git/.gitconfig ~
 ln -sfv $PWD/git/.gitignore_global ~
 
-cp -R $PWD/vim/ ~/.vim/
-echo "Copied $PWD/vim/ => ~/.vim/"
+ln -s $PWD/vim ~/.vim
