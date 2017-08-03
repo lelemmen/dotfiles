@@ -1,10 +1,29 @@
 ### Commands that are too complex for an alias
+### or too simple for a stand-alone script
+
+
+## Resource the .bash_profile
+function re-source() {
+	source ~/.bash_profile
+}
+
+
+## Clear the personal temporary directory
+function clrtmp() {
+	rm -rf $PERS_TEMP_DIR/*	
+}
+
+
+## Change to a directory and list it
+function cls() {
+	# The output redirection is here because {cd -} outputs some stuff 
+	cd "$1" &>/dev/null && ls
+}
 
 ## Make a directory and move into it
 function mkcd() {
 	mkdir "$1" && cd "$1"
 }
-
 
 ## Smart extract
 function extract() {

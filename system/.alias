@@ -12,9 +12,9 @@ alias g='git'
 alias ls='ls -GFha'
 
 ## Directory navigation
-alias ..="cd .." 		# Move up one directory
-alias ...="cd ../.." 		# Move up two directories
-alias ....="cd ../../.." 	# Move up three directories
+alias ..="cls .." 		# Move up one directory
+alias ...="cls ../.." 		# Move up two directories
+alias ....="cls ../../.." 	# Move up three directories
 
-alias -- -="cd - >/dev/null"	# Revisit the previous directory, redirecting output to the null device
-				# Doesn't work with alias - (since bash then thinks a flag is missing)
+alias -- -="cls -"		# Revisit the previous directory
+				# Doesn't work with {alias -} (since bash then thinks a flag is missing)
