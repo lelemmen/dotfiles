@@ -4,6 +4,12 @@
 ### The aliases should be sourced before the functions, so I can use aliases in the functions.
 
 
+## Move (a) file(s) to the trash
+function trash() {
+	mv "$@" ~/.Trash
+}
+
+
 ## Resource the .bash_profile
 function re-source() {
 	source ~/.bash_profile
@@ -33,6 +39,7 @@ function mkcd() {
 
 ## Smart extract
 function extract() {
+
 	# If the argument is a regular file, move into cases
 	if [ -f "$1" ]; then
 		case "$1" in
@@ -45,6 +52,22 @@ function extract() {
 	else
 		echo "'$1' is not a valid file to extract"
 	fi
+	
+	# Add an option to clean up the directory, i.e. moving the un-extracted file to trash.
+	echo -n "Would you like to clean? [y/n]: "
+	read user_wants_cleanup
+
+	case $user_wants_cleanup in
+		y)
+			echo "Cleaning up ..."
+			trash "$1"
+			echo "Done."
+			;;
+		n)	;;
+		*)
+			echo "$(user_wants_cleanup): unknown value [y/n], not cleaning up ..." ;;
+	esac
+	unset user_wants_cleanup
 }
 
 
