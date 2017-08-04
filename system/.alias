@@ -21,3 +21,4 @@ alias -- -="cls -"		# Revisit the previous directory
 				# Doesn't work with {alias -} (since bash then thinks a flag is missing)
 
 alias godot="cls $DOTFILES_DIR"	# Go to the dotfiles directory
+alias gotmp="cls $PERS_TEMP_DIR"# Go to the personal temporary directory
