@@ -19,8 +19,8 @@ function re-source() {
 ## Clear the personal temporary directory
 function clrtmp() {	
 	# Check if the PERS_TEMP_DIR variable exists and is non-empty
-	${PERS_TEMP_DIR:?"is not set or empty."}
-	rm -rf $PERS_TEMP_DIR/*	
+	: ${PERS_TEMP_DIR:?"is not set or empty."}
+	rm -rf "$PERS_TEMP_DIR"/*	
 }
 
 
