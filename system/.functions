@@ -1,5 +1,7 @@
 ### Commands that are too complex for an alias
 ### or too simple for a stand-alone script
+###
+### The aliases should be sourced before the functions, so I can use aliases in the functions.
 
 
 ## Resource the .bash_profile
@@ -10,6 +12,10 @@ function re-source() {
 
 ## Clear the personal temporary directory
 function clrtmp() {
+	unset PERS_TEMP_DIR
+	
+	# Check if the PERS_TEMP_DIR variable exists and is non-empty
+	${PERS_TEMP_DIR:?"is not set or empty."}
 	rm -rf $PERS_TEMP_DIR/*	
 }
 
