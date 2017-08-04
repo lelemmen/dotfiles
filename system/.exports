@@ -12,6 +12,7 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 
 ## Add some new directory environment variables
 export ARCH_PROJ=~/Documents/Archief/Projecten_Gearchiveerd
+export BIB_DIR=~/Documents/Archief/Bibliotheek
 
 export DOCT_TYPE=~/Documents/Projecten/Doctoraat/Typesetten
 export SOFTWARE_DIR=~/Software
@@ -24,3 +25,6 @@ export GQCG_COMP_SERVER=llemmens@157.193.91.86
 
 ## Enable OpenMPI
 export TMPDIR=/tmp
+
+## LibInt location
+export LIBINT_INSTALLATION_DIR=/usr/local/libint/2.2.0
