@@ -37,6 +37,7 @@ function extract() {
 	if [ -f "$1" ]; then
 		case "$1" in
 			*.tar)		tar -zxvf "$1"			;;
+			*.tar.gz)	tar -zxvf "$1"			;;
 			*.tar.lz)	lzip -d "$1" && extract "$1"	;;
 			*.zip)		unzip "$1"			;;
 			*)		echo "'$1' cannot be extracted via extract()" ;;
