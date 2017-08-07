@@ -4,3 +4,7 @@ for dotfile in ~/Software/.dotfiles/system/.{exports,env,path,alias,functions,pr
 	[ -f "$dotfile" ] && source "$dotfile"
 done
 unset dotfile
+
+
+## I'd like to use everything when in sudo on my Mac. The default shell for root is /bin/sh, which will first attempt to read and execute from /etc/profile (https://unix.stackexchange.com/a/195239).
+alias sudo='sudo '		# If the last character of an alias value is a space or tab, then the next word is also checked for alias expansion (https://askubuntu.com/a/22043)

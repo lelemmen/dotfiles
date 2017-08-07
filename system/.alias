@@ -1,10 +1,14 @@
 ### Defining shortcuts for commands
 
-alias resource="source ~/.bash_profile"
-alias rr='rm -rf'
+## Shorts
 alias g='git'
 alias rl='readlink'
 alias py='python'
+alias v='vim'
+
+## Small commands
+alias resource="source ~/.bash_profile"
+alias rr='rm -rf'
 
 ## Give a better version of ls
 # -G: enable colorized output (equivalent to export CLICOLOR=1)
@@ -23,3 +27,4 @@ alias -- -="cls -"			# Revisit the previous directory
 
 alias godot="cls $DOTFILES_DIR"		# Go to the dotfiles directory
 alias gotmp="cls $PERS_TEMP_DIR"	# Go to the personal temporary directory
+alias gotop="cls /"			# Go to the root directory
