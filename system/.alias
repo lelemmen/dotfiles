@@ -4,6 +4,7 @@
 alias g='git'
 alias rl='readlink'
 alias py='python'
+alias py36='python3.6'
 alias v='vim'
 
 ## Small commands
@@ -22,9 +23,7 @@ alias ..="cls .." 			# Move up one directory
 alias ...="cls ../.." 			# Move up two directories
 alias ....="cls ../../.." 		# Move up three directories
 
-alias -- -="cls -"			# Revisit the previous directory
-					# Doesn't work with {alias -} (since bash then thinks a flag is missing)
-
 alias godot="cls $DOTFILES_DIR"		# Go to the dotfiles directory
 alias gotmp="cls $PERS_TEMP_DIR"	# Go to the personal temporary directory
+alias gosft="cls $SOFTWARE_DIR"		# Go to the software directory
 alias gotop="cls /"			# Go to the root directory

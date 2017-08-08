@@ -2,7 +2,10 @@
 
 ## Enable MacPorts: append the MacPorts executable paths to the default path.
 # The MacPorts paths are appended at the front, so the MacPorts libraries will take precedence
-export PATH=/opt/local/bin:opt/local/sbin:$PATH
+export PATH=/opt/local/bin:opt/local/sbin:${PATH}
 
 ## Enable HORTON
 export PATH=${HOME}/Library/Python/2.7/bin:${PATH}
+
+## Enable extra python packages
+export PYTHONPATH=${HOME}/Library/Python/2.7/lib/python/site-packages:${PYTHONPATH}

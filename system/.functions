@@ -4,6 +4,12 @@
 ### The aliases should be sourced before the functions, so I can use aliases in the functions.
 
 
+## Find and grep in the current directory
+function fgr() {
+	find . | grep "$1"
+}
+
+
 ## Move (a) file(s) to the trash
 function trash() {
 	mv "$@" ~/.Trash
@@ -26,9 +32,15 @@ function clrtmp() {
 
 ## Change to a directory and list it
 function cls() {
-	# The output redirection is here because {cd -} outputs some stuff 
 	cd "$1" &>/dev/null && ls
 }
+
+
+## Separate function for cd -
+function -() {
+	cd "$1" &>/dev/null && ls
+}
+
 
 ## Make a directory and move into it
 function mkcd() {
