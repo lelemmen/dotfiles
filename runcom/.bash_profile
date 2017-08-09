@@ -3,7 +3,6 @@ for dotfile in ~/Software/.dotfiles/system/.{exports,env,path,alias,functions,pr
 	# If the dotfile is a regular file, source it to the current shell
 	[ -f "$dotfile" ] && source "$dotfile"
 done
-unset dotfile
 
 
 ## I'd like to use everything when in sudo on my Mac. The default shell for root is /bin/sh, which will first attempt to read and execute from /etc/profile (https://unix.stackexchange.com/a/195239).

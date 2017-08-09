@@ -19,10 +19,6 @@ export SOFTWARE_DIR=~/Software
 export PERS_TEMP_DIR=$SOFTWARE_DIR/tmp
 export DOTFILES_DIR=$SOFTWARE_DIR/.dotfiles
 
-## GQCG infrastructure
-export GQCG_COLL_SERVER=llemmens@157.193.91.156
-export GQCG_COMP_SERVER=llemmens@157.193.91.86
-
 ## Enable OpenMPI
 export TMPDIR=/tmp
 

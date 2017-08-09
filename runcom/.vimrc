@@ -16,3 +16,6 @@ filetype plugin indent on
 
 "Make backspace work like in most programs
 set backspace=indent,eol,start
+
+"Add line numbers
+set number

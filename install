@@ -1,0 +1,24 @@
+#!/bin/bash
+### "Install" the dotfiles
+
+## Symbolic links to ~ (${HOME})
+# ln -s: symbolic link, -f: if the target file exists, unlink it, -v: verbose
+## RUNCOM
+ln -sfv ${PWD}/runcom/.bash_profile ~
+ln -sfv ${PWD}/runcom/.inputrc ~
+ln -sfv ${PWD}/runcom/.vimrc ~
+
+## GIT
+ln -sfv ${PWD}/git/.gitconfig ~
+ln -sfv ${PWD}/git/.gitignore_global ~
+
+##VIM
+ln -sfv ${PWD}/vim/colors ~/.vim
+
+
+## Symlink the ssh config file if it exists
+if [ -f ~/Documents/Archief/Dropbox/.ssh-config ]; then
+	ln -sfv ~/Documents/Archief/Dropbox/.ssh-config ~/.ssh/config
+else
+	echo ".ssh-config file not found in Dropbox. Maybe Dropbox isn't installed in the right place."
+fi

@@ -4,7 +4,7 @@
 ### The aliases should be sourced before the functions, so I can use aliases in the functions.
 
 
-## Find and grep in the current directory
+## find and grep in the current directory
 function fgr() {
 	find . | grep "$1"
 }
@@ -32,13 +32,11 @@ function clrtmp() {
 
 ## Change to a directory and list it
 function cls() {
-	cd "$1" &>/dev/null && ls
+	cd "$1" && ls
 }
-
-
 ## Separate function for cd -
 function -() {
-	cd "$1" &>/dev/null && ls
+	cd - &>/dev/null && ls
 }
 
 
