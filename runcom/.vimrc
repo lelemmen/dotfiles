@@ -19,3 +19,7 @@ set backspace=indent,eol,start
 
 "Add line numbers
 set number
+
+"Make sure that vim wraps long lines at a character in 'breakat' (which
+"contains spaces and tabs)
+set nolist wrap linebreak breakat&vim

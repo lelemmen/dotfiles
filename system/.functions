@@ -45,40 +45,6 @@ function mkcd() {
 	mkdir "$1" && cd "$1"
 }
 
-## Smart extract
-function extract() {
-
-	# If the argument is a regular file, move into cases
-	if [ -f "$1" ]; then
-		case "$1" in
-			*.tar)		tar -zxvf "$1"			;;
-			*.tar.gz)	tar -zxvf "$1"			;;
-			*.tar.lz)	lzip -d "$1" && extract "$1"	;;
-			*.zip)		unzip "$1"			;;
-			*)		echo "'$1' cannot be extracted via extract()" ;;
-		esac
-	else
-		echo "'$1' is not a valid file to extract"
-	fi
-	
-	# Add an option to clean up the directory, i.e. moving the un-extracted file to trash.
-	echo -n "Would you like to clean? [y/n]: "
-	read user_wants_cleanup
-
-	case $user_wants_cleanup in
-		y)
-			echo "Cleaning up ..."
-			trash "$1"
-			echo "Done."
-			;;
-		n)	;;
-		*)
-			echo "$(user_wants_cleanup): unknown value [y/n], not cleaning up ..." ;;
-	esac
-	unset user_wants_cleanup
-}
-
-
 ## Open manpages via pdf
 function manpdf() {
 	# man -t: format output

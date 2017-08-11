@@ -11,3 +11,10 @@
 .toc
 .nav
 .snm
+
+## PyCharm
+.idea/
+
+## Misc.
+build/
+*backup*/

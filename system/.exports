@@ -16,8 +16,9 @@ export BIB_DIR=~/Documents/Archief/Bibliotheek
 
 export DOCT_TYPE=~/Documents/Projecten/Doctoraat/Typesetten
 export SOFTWARE_DIR=~/Software
-export PERS_TEMP_DIR=$SOFTWARE_DIR/tmp
-export DOTFILES_DIR=$SOFTWARE_DIR/.dotfiles
+export PERS_TEMP_DIR=${SOFTWARE_DIR}/tmp
+export DOTFILES_DIR=${SOFTWARE_DIR}/.dotfiles
+export USELATEX_PATH="/Users/laurentlemmens/Documents/Archief/Bibliotheek/Korte informatie en referentie/CMake/UseLATEX.cmake"
 
 ## Enable OpenMPI
 export TMPDIR=/tmp
