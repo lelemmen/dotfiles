@@ -25,3 +25,6 @@ export TMPDIR=/tmp
 
 ## LibInt location
 export LIBINT_INSTALLATION_DIR=/usr/local/libint/2.2.0
+
+## Enable LibInt
+export LIBINT_DATA_PATH=${LIBINT_INSTALLATION_DIR}/include/libint2/basis
