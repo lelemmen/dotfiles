@@ -23,8 +23,11 @@ export USELATEX_PATH="/Users/laurentlemmens/Documents/Archief/Bibliotheek/Korte 
 ## Enable OpenMPI
 export TMPDIR=/tmp
 
-## LibInt location
-export LIBINT_INSTALLATION_DIR=/usr/local/libint/2.2.0
+## libint prefix
+export LIBINT_PREFIX=/usr/local/libint/2.2.0
 
-## Enable LibInt
-export LIBINT_DATA_PATH=${LIBINT_INSTALLATION_DIR}/include/libint2/basis
+## Enable libint
+export LIBINT_DATA_PATH=${LIBINT_PREFIX}/include/libint2/basis
+
+## eigen3 prefix
+export EIGEN_PREFIX=/opt/local/include
