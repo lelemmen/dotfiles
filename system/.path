@@ -10,6 +10,11 @@ export PATH=${HOME}/Library/Python/2.7/bin:${PATH}
 ## Enable my own scripts
 export PATH=${PATH}:${SOFTWARE_DIR}/bin
 
+## Enable MKL
+export MKL_ROOT=/opt/intel/mkl
+export LIBRARY_PATH=${LIBRARY_PATH}:${MKL_ROOT}/lib
+
+
 
 ## Enable extra python packages
 export PYTHONPATH=${HOME}/Library/Python/2.7/lib/python/site-packages:${PYTHONPATH}
