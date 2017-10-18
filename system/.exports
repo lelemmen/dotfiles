@@ -27,7 +27,8 @@ export TMPDIR=/tmp
 export LIBINT_PREFIX=/usr/local/libint/2.3.1
 
 ## Enable libint
-export LIBINT_DATA_PATH=${LIBINT_PREFIX}/include/libint2/basis
+export LIBINT_DATA_PATH=${LIBINT_PREFIX}/share/libint/2.3.1/basis
+
 
 ## eigen3 prefix
 export EIGEN_PREFIX=/opt/local/include
