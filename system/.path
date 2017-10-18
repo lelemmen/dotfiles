@@ -4,6 +4,9 @@
 # The MacPorts paths are appended at the front, so the MacPorts libraries will take precedence
 export PATH=/opt/local/bin:opt/local/sbin:${PATH}
 
+## Enable Conda
+export PATH=/opt/local/anaconda/bin:${PATH}
+
 ## Enable HORTON
 export PATH=${HOME}/Library/Python/2.7/bin:${PATH}
 
@@ -11,9 +14,10 @@ export PATH=${HOME}/Library/Python/2.7/bin:${PATH}
 export PATH=${PATH}:${SOFTWARE_DIR}/bin
 
 ## Enable MKL
-export MKL_ROOT=/opt/intel/mkl
-export LIBRARY_PATH=${LIBRARY_PATH}:${MKL_ROOT}/lib
-
+export INTEL_ROOT=/opt/intel
+export MKL_ROOT=${INTEL_ROOT}/mkl
+export LIBRARY_PATH=${LIBRARY_PATH}:${INTEL_ROOT}/lib:${MKL_ROOT}/lib
+export DYLD_LIBRARY_PATH=${LIBRARY_PATH}:${INTEL_ROOT}/lib:${MKL_ROOT}/lib
 
 
 ## Enable extra python packages

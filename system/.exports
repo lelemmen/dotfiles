@@ -24,7 +24,7 @@ export USELATEX_PATH="/Users/laurentlemmens/Documents/Archief/Bibliotheek/Korte 
 export TMPDIR=/tmp
 
 ## libint prefix
-export LIBINT_PREFIX=/usr/local/libint/2.2.0
+export LIBINT_PREFIX=/usr/local/libint/2.3.1
 
 ## Enable libint
 export LIBINT_DATA_PATH=${LIBINT_PREFIX}/include/libint2/basis
