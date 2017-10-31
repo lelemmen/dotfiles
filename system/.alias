@@ -9,7 +9,6 @@ alias v='vim'
 
 ## Small commands
 alias resource="source ~/.bash_profile"
-alias rr='rm -rf'
 
 ## Give a better version of ls
 # -G: enable colorized output (equivalent to export CLICOLOR=1)
