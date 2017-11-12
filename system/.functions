@@ -3,7 +3,6 @@
 ###
 ### The aliases should be sourced before the functions, so I can use aliases in the functions.
 
-
 ## find and grep in the current directory
 function fgr() {
 	find . | grep "$1"
@@ -22,11 +21,13 @@ function re-source() {
 }
 
 
-## Clear the personal temporary directory
+## Clear the  personal temporary directory and remake c++ and python directories
 function clrtmp() {	
 	# Check if the PERS_TEMP_DIR variable exists and is non-empty
 	: ${PERS_TEMP_DIR:?"is not set or empty."}
-	rm -rf "$PERS_TEMP_DIR"/*	
+	rm -rf "${PERS_TEMP_DIR}"/*
+	mkdir "${PERS_TEMP_DIR}"/c++
+	mkdir "${PERS_TEMP_DIR}"/python
 }
 
 
@@ -51,3 +52,10 @@ function manpdf() {
 	# open -a: specify application -f: reads input from standard input
 	man -t "$1" | open -fa /Applications/Preview.app
 }
+
+## Rebuild a project using CMake
+function rebuild() {
+	rm -rf build
+	mkcd build && cmake ..
+}
+

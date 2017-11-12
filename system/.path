@@ -4,8 +4,6 @@
 # The MacPorts paths are appended at the front, so the MacPorts libraries will take precedence
 export PATH=/opt/local/bin:opt/local/sbin:${PATH}
 
-## Enable Conda
-export PATH=/opt/local/anaconda/bin:${PATH}
 
 ## Enable HORTON
 export PATH=${HOME}/Library/Python/2.7/bin:${PATH}
