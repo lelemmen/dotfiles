@@ -25,6 +25,7 @@ alias ....="cls ../../.." 		# Move up three directories
 alias godot="cls ${DOTFILES_DIR}"			# Go to the dotfiles directory
 alias gotmp="cls ${PERS_TEMP_DIR}"			# Go to the personal temporary directory
 alias gosoft="cls ${SOFTWARE_DIR}"			# Go to the software directory
+alias gobin="cls ${SOFTWARE_BIN_DIR}"			# Go to my personal binary directory
 alias gotop="cls /"					# Go to the root directory
 alias gotype="cls ${DOCT_TYPE}"				# Go to my phd typesetting directory
 alias gohome="cls ~"					# Go to ${HOME}
