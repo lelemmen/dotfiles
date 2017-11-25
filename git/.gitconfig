@@ -6,11 +6,13 @@
 	user = lelemmen
 
 [alias]
-	s = status
-	a = add .
-	m = commit -m 
-	p = push
-
+	s = status 
+	a = add . 
+	m = commit -m  
+	p = push 
+	
+	co = checkout 
+	cob = checkout -b 
 [core]
         editor = vim
 	excludesfile = ~/.gitignore_global
