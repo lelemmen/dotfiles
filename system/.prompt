@@ -5,11 +5,24 @@
 # \u is expanded in the current username
 # \h is expanded in the hostname up to the first "."
 # \w is expanded in the current working directory
-# non-printing escape sequences are enclosed in \[\033[____\]
-CYAN='\[\033[0;36m\]'           # cyan
-GREEN='\[\033[0;32m\]'          # green
-YELLOW='\[\033[0;33m\]'         # yellow
+# non-printing escape sequences are enclosed in \[\033[____\], colours should also have a lowercase m
+CYAN='\[\033[0;36m\]'
+GREEN='\[\033[0;32m\]'
+YELLOW='\[\033[0;33m\]'
+PURPLE='\[\033[0;35m\]'
 NO_COLOR='\[\033[m\]'           # color reset
 
+
 # e.g. LaurentLemmens@MacBook-Pro-van-Laurent:~$
-export PS1="${CYAN}\u${NO_COLOR}@${GREEN}\h${NO_COLOR}:${YELLOW}\w${NO_COLOR}\$ "
+export PS1="${CYAN}\u${NO_COLOR}@${GREEN}\h${NO_COLOR}:${YELLOW}\w${NO_COLOR}"
+
+# When in a git repository, add the git branch name as well
+# (https://martinfitzpatrick.name/article/add-git-branch-name-to-terminal-prompt-mac/)
+parse_git_branch() {
+
+	# If there are any errors, process them to the null device 
+	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+export PS1="${PS1}${PURPLE}\$(parse_git_branch)${NO_COLOR}\$ "  # escaping $ leads to delayed evaluation
+
