@@ -2,9 +2,10 @@
 
 ## Shorts
 alias g='git'
-alias rl='readlink'
+alias jnb='jupyter-notebook-3.6'
 alias py='python'
 alias py36='python3.6'
+alias rl='readlink'
 alias v='vim'
 
 ## Small commands
