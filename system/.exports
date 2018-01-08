@@ -19,7 +19,7 @@ export SOFTWARE_DIR=~/Software
 export SOFTWARE_BIN_DIR=${SOFTWARE_DIR}/bin
 export PERS_TEMP_DIR=${SOFTWARE_DIR}/tmp
 export DOTFILES_DIR=${SOFTWARE_DIR}/.dotfiles
-export USELATEX_PATH="/Users/laurentlemmens/Documents/Archief/Bibliotheek/Korte informatie en referentie/CMake/UseLATEX.cmake"
+export USELATEX_PATH=${DOTFILES_DIR}/cmake/UseLATEX.cmake
 
 ## Enable OpenMPI
 export TMPDIR=/tmp
