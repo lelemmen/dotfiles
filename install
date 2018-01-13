@@ -14,11 +14,3 @@ ln -sfv ${PWD}/git/.gitignore_global ~
 
 ##VIM
 ln -sfv ${PWD}/vim/colors ~/.vim
-
-
-## Symlink the ssh config file if it exists
-if [ -f ~/Documents/Archief/Dropbox/.ssh-config ]; then
-	ln -sfv ~/Documents/Archief/Dropbox/.ssh-config ~/.ssh/config
-else
-	echo ".ssh-config file not found in Dropbox. Maybe Dropbox isn't installed in the right place."
-fi
