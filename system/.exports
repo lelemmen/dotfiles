@@ -21,15 +21,17 @@ export PERS_TEMP_DIR=${SOFTWARE_DIR}/tmp
 export DOTFILES_DIR=${SOFTWARE_DIR}/.dotfiles
 export USELATEX_PATH=${DOTFILES_DIR}/cmake/UseLATEX.cmake
 
+
 ## Enable OpenMPI
 export TMPDIR=/tmp
 
-## libint prefix
-export LIBINT_PREFIX=/usr/local/libint/2.3.1
-
 ## Enable libint
+export LIBINT_PREFIX=/usr/local/libint/2.3.1
 export LIBINT_DATA_PATH=${LIBINT_PREFIX}/share/libint/2.3.1/basis
 
-
-## eigen3 prefix
+## Enable Eigen3
 export EIGEN_PREFIX=/opt/local/include
+
+## Enable Intel MKL
+export INTEL_ROOT=/opt/intel
+export MKL_ROOT=${INTEL_ROOT}/mkl

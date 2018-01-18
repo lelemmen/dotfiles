@@ -11,9 +11,7 @@ export PATH=${HOME}/Library/Python/2.7/bin:${PATH}
 ## Enable my own scripts
 export PATH=${PATH}:${SOFTWARE_BIN_DIR}
 
-## Enable MKL
-export INTEL_ROOT=/opt/intel
-export MKL_ROOT=${INTEL_ROOT}/mkl
+## Enable Intel MKL
 export LIBRARY_PATH=${LIBRARY_PATH}:${INTEL_ROOT}/lib:${MKL_ROOT}/lib
 export DYLD_LIBRARY_PATH=${LIBRARY_PATH}:${INTEL_ROOT}/lib:${MKL_ROOT}/lib
 
