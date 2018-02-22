@@ -18,3 +18,7 @@ export DYLD_LIBRARY_PATH=${LIBRARY_PATH}:${INTEL_ROOT}/lib:${MKL_ROOT}/lib
 
 ## Enable extra python packages
 export PYTHONPATH=${HOME}/Library/Python/2.7/lib/python/site-packages:${PYTHONPATH}
+
+
+## Enable anaconda3
+export PATH=/anaconda3/bin:${PATH}
