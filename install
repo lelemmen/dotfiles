@@ -14,3 +14,5 @@ ln -sfv ${PWD}/git/.gitconfig ~
 
 ## vim
 ln -sfv ${PWD}/vim/colors ~/.vim
+ln -sfv ${PWD}/vim/ftplugin ~/.vim
+
