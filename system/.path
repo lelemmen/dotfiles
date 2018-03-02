@@ -1,14 +1,12 @@
 ### All changes to PATHS
 
+
 ## Enable MacPorts: append the MacPorts executable paths to the default path.
 # The MacPorts paths are appended at the front, so the MacPorts libraries will take precedence
 export PATH=/opt/local/bin:opt/local/sbin:${PATH}
 
-## Enable anaconda3
+## Then, enable Conda
 export PATH=${PATH}:/anaconda3/bin
-
-## Enable HORTON
-export PATH=${HOME}/Library/Python/2.7/bin:${PATH}
 
 ## Enable my own scripts
 export PATH=${PATH}:${SOFTWARE_BIN_DIR}
@@ -17,8 +15,6 @@ export PATH=${PATH}:${SOFTWARE_BIN_DIR}
 export LIBRARY_PATH=${LIBRARY_PATH}:${INTEL_ROOT}/lib:${MKL_ROOT}/lib
 export DYLD_LIBRARY_PATH=${LIBRARY_PATH}:${INTEL_ROOT}/lib:${MKL_ROOT}/lib
 
-
 ## Enable extra python packages
-export PYTHONPATH=${HOME}/Library/Python/2.7/lib/python/site-packages:${PYTHONPATH}
-
+export PYTHONPATH=${PYTHONPATH}:/opt/local/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages
 
