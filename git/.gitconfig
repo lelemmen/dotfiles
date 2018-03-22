@@ -9,6 +9,7 @@
 	s = status 
 	a = add . 
 	m = commit -m  
+	ma = commit --amend
 	p = push 
 	
 	co = checkout 
@@ -16,5 +17,4 @@
 [core]
         editor = vim
 	excludesfile = ~/.gitignore_global
-
 
