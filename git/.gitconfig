@@ -11,7 +11,8 @@
 
 	m = commit -m  
 	ma = commit --amend
-	
+
+	f = fetch
 	ps = push 
 	pl = pull
 
