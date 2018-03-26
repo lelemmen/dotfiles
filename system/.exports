@@ -8,7 +8,9 @@
 # 8. executable with setuid bit set, 9. executable with setgid bit set
 # 10. directory writable to others, with sticky bit, 11. directory writable to others, without sticky bit
 # default is LSCOLORS = "exfxcxdxbxegedabagacad"
-export LSCOLORS=ExFxBxDxCxegedabagacad
+if [ "$(uname)" == "Darwin" ]; then
+	export LSCOLORS=ExFxBxDxCxegedabagacad
+fi
 
 ## Add some new directory environment variables
 export ARCH_PROJ=~/Documents/Archief/Projecten_Gearchiveerd
