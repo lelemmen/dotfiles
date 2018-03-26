@@ -7,13 +7,17 @@
 
 [alias]
 	s = status 
-	a = add . 
+	a = add .
+
 	m = commit -m  
 	ma = commit --amend
-	p = push 
 	
+	ps = push 
+	pl = pull
+
 	co = checkout 
-	cob = checkout -b 
+	cob = checkout -b
+	cod = checkout develop
 [core]
         editor = vim
 	excludesfile = ~/.gitignore_global
