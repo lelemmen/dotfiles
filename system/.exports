@@ -40,3 +40,7 @@ export MKL_ROOT=${INTEL_ROOT}/mkl
 
 ## Enable GraphViz
 export GRAPHVIZ_DOT=/opt/local/bin/dot
+
+## Force clang to be used for C and C++ compiling
+export CC=/opt/local/bin/clang
+export CXX=/opt/local/bin/clang++

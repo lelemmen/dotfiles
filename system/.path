@@ -5,15 +5,19 @@
 # The MacPorts paths are appended at the front, so the MacPorts libraries will take precedence
 export PATH=/opt/local/bin:opt/local/sbin:${PATH}
 
-## Then, enable Conda
-export PATH=${PATH}:/anaconda3/bin
+
+## Enable executables installed for python
+export PATH=${PATH}:/opt/local/Library/Frameworks/Python.framework/Versions/3.6/bin
+
 
 ## Enable my own scripts
 export PATH=${PATH}:${SOFTWARE_BIN_DIR}
 
+
 ## Enable Intel MKL
 export LIBRARY_PATH=${LIBRARY_PATH}:${INTEL_ROOT}/lib:${MKL_ROOT}/lib
 export DYLD_LIBRARY_PATH=${LIBRARY_PATH}:${INTEL_ROOT}/lib:${MKL_ROOT}/lib
+
 
 ## Enable extra python packages
 export PYTHONPATH=${PYTHONPATH}:/opt/local/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages
