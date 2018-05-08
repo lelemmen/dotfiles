@@ -15,16 +15,6 @@ function re-source() {
 }
 
 
-## Clear the  personal temporary directory and remake c++ and python directories
-function clrtmp() {	
-	# Check if the PERS_TEMP_DIR variable exists and is non-empty
-	: ${PERS_TEMP_DIR:?"is not set or empty."}
-	sudo rm -rf "${PERS_TEMP_DIR}"/*
-	mkdir "${PERS_TEMP_DIR}"/c++
-	mkdir "${PERS_TEMP_DIR}"/python
-}
-
-
 ## Change to a directory and list it
 function cls() {
 	cd "$1" && ls
