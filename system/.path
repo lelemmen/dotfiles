@@ -14,6 +14,9 @@ export PATH=${PATH}:/opt/local/Library/Frameworks/Python.framework/Versions/3.6/
 export PATH=${PATH}:${SOFTWARE_BIN_DIR}
 
 
+## Enable InfluxDB (installed through Homebrew)
+export PATH=${PATH}:~/.homebrew/bin
+
 ## Enable Intel MKL
 export LIBRARY_PATH=${LIBRARY_PATH}:${INTEL_ROOT}/lib:${MKL_ROOT}/lib
 export DYLD_LIBRARY_PATH=${LIBRARY_PATH}:${INTEL_ROOT}/lib:${MKL_ROOT}/lib
@@ -22,3 +25,6 @@ export DYLD_LIBRARY_PATH=${LIBRARY_PATH}:${INTEL_ROOT}/lib:${MKL_ROOT}/lib
 ## Enable extra python packages
 export PYTHONPATH=${PYTHONPATH}:/opt/local/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages
 
+
+## Enable InfluxDB
+export INFLUXDB_CONFIG_PATH=${BREW_PATH}/etc/influxdb.conf

@@ -44,3 +44,7 @@ export GRAPHVIZ_DOT=/opt/local/bin/dot
 ## Force clang to be used for C and C++ compiling
 export CC=/opt/local/bin/clang
 export CXX=/opt/local/bin/clang++
+
+
+## Enable Homebrew
+export BREW_PATH=~/.homebrew
