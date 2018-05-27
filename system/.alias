@@ -31,3 +31,4 @@ alias gotop="cls /"					# Go to the root directory
 alias gotype="cls ${DOCT_TYPE}"				# Go to my phd typesetting directory
 alias gohome="cls ~"					# Go to ${HOME}
 alias godoct="cls ~/Documents/Projecten/Doctoraat"	# Go to my phd project directory 
+alias gofin="cls ~/Documents/Projecten/Persoonlijk/Beleggen\ en\ Financiën"
