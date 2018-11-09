@@ -18,8 +18,8 @@ export PATH=${PATH}:${SOFTWARE_BIN_DIR}
 export PATH=${PATH}:~/.homebrew/bin
 
 ## Enable Intel MKL
-export LIBRARY_PATH=${LIBRARY_PATH}:${INTEL_ROOT}/lib:${MKL_ROOT}/lib
-export DYLD_LIBRARY_PATH=${LIBRARY_PATH}:${INTEL_ROOT}/lib:${MKL_ROOT}/lib
+export LIBRARY_PATH=${LIBRARY_PATH}:${INTELROOT}/lib:${MKLROOT}/lib
+export DYLD_LIBRARY_PATH=${LIBRARY_PATH}:${INTELROOT}/lib:${MKLROOT}/lib
 
 
 ## Enable extra python packages
