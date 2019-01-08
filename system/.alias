@@ -1,15 +1,16 @@
 ### Defining shortcuts for commands
 
-## Shorts
+## Shortcuts
 alias g='git'
-alias jnb='jupyter-notebook-3.6'
-alias py='python'
-alias py36='python3.6'
-alias rl='readlink'
-alias v='vim'
+
+## I'd like to use everything when in sudo on my Mac. The default shell for root is /bin/sh, which will first attempt to read and execute from /etc/profile (https://unix.stackexchange.com/a/195239).
+alias sudo='sudo '              # If the last character of an alias value is a space or tab, then the next word is also checked for alias expansion (https://askubuntu.com/a/22043)
+
+
 
 ## Small commands
 alias resource="source ~/.bash_profile"
+
 
 ## Give a better version of ls
 # -G: enable colorized output (equivalent to export CLICOLOR=1)

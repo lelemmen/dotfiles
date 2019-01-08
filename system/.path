@@ -6,8 +6,8 @@
 export PATH=/opt/local/bin:opt/local/sbin:${PATH}
 
 
-## Enable executables installed for python
-export PATH=${PATH}:/opt/local/Library/Frameworks/Python.framework/Versions/3.6/bin
+# Enable Miniconda, taking precedence over MacPorts because MacPorts also installs python distributions
+export PATH="/Users/laurentlemmens/miniconda/bin:${PATH}"
 
 
 ## Enable my own scripts
@@ -20,10 +20,6 @@ export PATH=${PATH}:~/.homebrew/bin
 ## Enable Intel MKL
 export LIBRARY_PATH=${LIBRARY_PATH}:${INTELROOT}/lib:${MKLROOT}/lib
 export DYLD_LIBRARY_PATH=${LIBRARY_PATH}:${INTELROOT}/lib:${MKLROOT}/lib
-
-
-## Enable extra python packages
-export PYTHONPATH=${PYTHONPATH}:/opt/local/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages
 
 
 ## Enable InfluxDB
