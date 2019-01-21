@@ -13,8 +13,10 @@ PURPLE='\[\033[0;35m\]'
 NO_COLOR='\[\033[m\]'           # color reset
 
 
-# e.g. LaurentLemmens@MacBook-Pro-van-Laurent:~$
-export PS1="${CYAN}\u${NO_COLOR}@${GREEN}\h${NO_COLOR}:${YELLOW}\w${NO_COLOR}"
+# e.g. LaurentLemmens @ MacBook-Pro-van-Laurent: ~/Software (git_branch)
+#       $
+
+export PS1="${CYAN}\u ${NO_COLOR}@ ${GREEN}\h${NO_COLOR}: ${YELLOW}\w${NO_COLOR}"
 
 # When in a git repository, add the git branch name as well
 # (https://martinfitzpatrick.name/article/add-git-branch-name-to-terminal-prompt-mac/)
@@ -24,5 +26,5 @@ parse_git_branch() {
 	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
-export PS1="${PS1}${PURPLE}\$(parse_git_branch)${NO_COLOR}\$ "  # escaping $ leads to delayed evaluation
+export PS1="${PS1}${PURPLE} \$(parse_git_branch)${NO_COLOR}\n $ "  # escaping $ leads to delayed evaluation
 
