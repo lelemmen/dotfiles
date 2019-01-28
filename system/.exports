@@ -13,10 +13,8 @@ if [ "$(uname)" == "Darwin" ]; then
 fi
 
 ## Add some new directory environment variables
-export ARCH_PROJ=~/Documents/Archief/Projecten_Gearchiveerd
-export BIB_DIR=~/Documents/Archief/Bibliotheek
+export TYPE_DIR=~/Documents/Projecten/Typesetten
 
-export DOCT_TYPE=~/Documents/Projecten/Doctoraat/Typesetten
 export SOFTWARE_DIR=~/Software
 export SOFTWARE_BIN_DIR=${SOFTWARE_DIR}/bin
 export PERS_TEMP_DIR=${SOFTWARE_DIR}/tmp
