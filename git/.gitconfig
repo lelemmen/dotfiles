@@ -1,30 +1,30 @@
 [user]
-        name = Laurent Lemmens
-	email = laurent_lemmens@hotmail.com
-	signingKey = 40B3C0F81CB075CF28E7E886113F109A81BB502A
+    name = Laurent Lemmens
+    email = laurent_lemmens@hotmail.com
 
 [github]
 	user = lelemmen
 
 [alias]
-	s = status 
-	a = add .
+    s = status 
+    a = add .
 
-	m = commit -m  
-	ma = commit --amend
+    m = commit -m  
+    ma = commit --amend
 
-	f = fetch
-	ps = push 
-	pl = pull
+    f = fetch
+    ps = push 
+    pl = pull
 
-	co = checkout 
-	cob = checkout -b
-	cod = checkout develop
-	com = checkout master
+    co = checkout 
+    cob = checkout -b
+    cod = checkout develop
+    com = checkout master
 
 [core]
-        editor = vim
-	excludesfile = ~/.gitignore_global
+    editor = vim
+    excludesfile = ~/.gitignore_global
 
 [status]
-	submodulesummary = true
+    submodulesummary = true
+
