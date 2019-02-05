@@ -4,13 +4,10 @@
 ## Symbolic links to ~ (${HOME})
 # ln -s: symbolic link, -f: if the target file exists, unlink it, -v: verbose
 
-## runcom 
-ln -sfv ${PWD}/runcom/.bash_profile ~
-ln -sfv ${PWD}/runcom/.inputrc ~
-ln -sfv ${PWD}/runcom/.vimrc ~
+ln -sfv ${PWD}/.bash_profile ~
+ln -sfv ${PWD}/.bashrc ~
+##ln -sfv ${PWD}/.inputrc ~
+ln -sfv ${PWD}/.vimrc ~
 
-## git
 ln -sfv ${PWD}/git/.gitconfig ~
-
-## vim
 ln -sfv ${PWD}/vim/ ~/.vim

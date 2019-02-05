@@ -6,7 +6,6 @@ colorscheme jellybeans
 "types, and enable loading the indent file for the specific file types
 filetype plugin indent on
 
-
 "Make backspace work like in most programs
 set backspace=indent,eol,start
 
@@ -17,3 +16,5 @@ set number
 "contains spaces and tabs)
 set nolist wrap linebreak breakat&vim
 
+"Make a tab equal to 4 spaces
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
