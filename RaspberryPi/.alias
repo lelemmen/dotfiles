@@ -1,0 +1,4 @@
+# Raspberry Pi-specific aliases
+
+alias ls='ls -Fha --color'
+

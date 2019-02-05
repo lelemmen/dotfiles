@@ -3,12 +3,6 @@
 # Use all aliases in sudo mode
 alias sudo='sudo '      # if the last character of an alias value is a space or tab, then the next word is also checked for alias expansion (https://askubuntu.com/a/22043)
 
-# -G: enable colorized output (equivalent to export CLICOLOR=1)
-# -F: better characterized output (/ after directories, * after executable, @ after symbolic link)
-# -h: better readable: use kB, MB, ...
-# -a: all
-alias ls='ls -GFha'
-
 alias g='git'
 
 alias ..="cls .."               # move up one directory

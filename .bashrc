@@ -15,12 +15,15 @@ done
 case $(uname) in
     "Darwin")
         mbp_dotfiles_dir=${dotfiles_dir}/MacbookPro
-        for mbp_dotfile in ${mbp_dotfiles_dir}/.{functions,exports,path}; do
+        for mbp_dotfile in ${mbp_dotfiles_dir}/.{functions,exports,path,alias}; do
             source_if_regular_file ${mbp_dotfile}
         done 
         ;;
     "Linux")
-        source ${dotfiles_dir}/RaspberryPi/*
+        rpi_dotfiles_dir=${dotfiles_dir}/RaspberryPi
+        for rpi_dotfile in ${rpi_dotfiles_dir}/.{exports,alias}; do
+            source_if_regular_file ${rpi_dotfile}
+        done
         ;;
     *)
         echo "Unrecognized OS."

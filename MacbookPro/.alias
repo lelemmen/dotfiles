@@ -1,0 +1,8 @@
+# Macbook Pro-specific aliases
+
+# -G: enable colorized output (equivalent to export CLICOLOR=1)
+# -F: better characterized output (/ after directories, * after executable, @ after symbolic link)
+# -h: better readable: use kB, MB, ...
+# -a: all
+alias ls='ls -GFha'
+
