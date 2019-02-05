@@ -21,6 +21,7 @@
 	cob = checkout -b
 	cod = checkout develop
 	com = checkout master
+
 [core]
         editor = vim
 	excludesfile = ~/.gitignore_global
