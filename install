@@ -6,8 +6,9 @@
 
 ln -sfv ${PWD}/.bash_profile ~
 ln -sfv ${PWD}/.bashrc ~
-##ln -sfv ${PWD}/.inputrc ~
+ln -sfv ${PWD}/.inputrc ~
 ln -sfv ${PWD}/.vimrc ~
 
 ln -sfv ${PWD}/git/.gitconfig ~
 ln -sfv ${PWD}/vim/ ~/.vim
+

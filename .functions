@@ -1,60 +1,33 @@
-### Commands that are too complex for an alias
-### or too simple for a stand-alone script
-###
-### The aliases should be sourced before the functions, so I can use aliases in the functions.
+# Commands that are too complex for an alias
+# or too simple for a stand-alone script
 
-## find and grep in the current directory
+# find and grep in the current directory
 function fgr() {
-	find . | grep "$1"
+    find . | grep "$1"
 }
 
-
-## Resource the .bash_profile
-function re-source() {
-	source ~/.bash_profile
-}
-
-
-## Change to a directory and list it
+# Change to a directory and ls it
 function cls() {
-	cd "$1" && ls
+    cd "$1" && ls
 }
 
-
-## Separate function for cd -
+# Separate function for cd -
 function -() {
-	cd - &>/dev/null && ls
+    cd - &>/dev/null && ls
 }
 
-
-## Make a directory and move into it
+# Make a directory and move into it
 function mkcd() {
-	mkdir "$1" && cd "$1"
+    mkdir "$1" && cd "$1"
 }
 
+function mkcls() {
+    mkdir "$1" && cls "$1"
+}
 
-## Rebuild a project using CMake
+# Rebuild a project using CMake
 function rebuild() {
 	rm -rf build
-	mkcd build && cmake ..
+	mkcd build && cmake .. "$@"
 }
 
-
-
-##
-### SPECIAL MACOS FUNCTIONS
-##
-if [ "$(uname)" == "Darwin" ]; then
-
-	## Move (a) file(s) to the trash
-	function trash() {
-		mv "$@" ~/.Trash
-	}
-
-	## Open manpages via pdf
-	function manpdf() {
-		# man -t: format output
-		# open -a: specify application -f: reads input from standard input
-		man -t "$1" | open -fa /Applications/Preview.app
-	}
-fi

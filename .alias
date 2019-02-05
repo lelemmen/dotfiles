@@ -1,29 +1,21 @@
-### Defining shortcuts for commands
+# Small commands and aliases
 
-## Shortcuts
-alias g='git'
+# Use all aliases in sudo mode
+alias sudo='sudo '      # if the last character of an alias value is a space or tab, then the next word is also checked for alias expansion (https://askubuntu.com/a/22043)
 
-## I'd like to use everything when in sudo on my Mac. The default shell for root is /bin/sh, which will first attempt to read and execute from /etc/profile (https://unix.stackexchange.com/a/195239).
-alias sudo='sudo '              # If the last character of an alias value is a space or tab, then the next word is also checked for alias expansion (https://askubuntu.com/a/22043)
-
-
-
-## Small commands
-alias resource="source ~/.bash_profile"
-
-
-## Give a better version of ls
 # -G: enable colorized output (equivalent to export CLICOLOR=1)
 # -F: better characterized output (/ after directories, * after executable, @ after symbolic link)
 # -h: better readable: use kB, MB, ...
 # -a: all
 alias ls='ls -GFha'
 
-## Directory navigation
-alias ..="cls .." 			# Move up one directory
-alias ...="cls ../.." 			# Move up two directories
-alias ....="cls ../../.." 		# Move up three directories
+alias g='git'
 
+alias ..="cls .."               # move up one directory
+alias ...="cls ../.."           # move up two directories
+alias ....="cls ../../.."       # move up three directories
+
+alias resource="source ~/.bash_profile"
 alias godot="cls ${DOTFILES_DIR}"			# Go to the dotfiles directory
 alias gotmp="cls ${PERS_TEMP_DIR}"			# Go to the personal temporary directory
 alias gosoft="cls ${SOFTWARE_DIR}"			# Go to the software directory
@@ -31,3 +23,4 @@ alias gobin="cls ${SOFTWARE_BIN_DIR}"			# Go to my personal binary directory
 alias gotop="cls /"					# Go to the root directory
 alias gotype="cls ${TYPE_DIR}"				# Go to my typesetting directory
 alias gohome="cls ~"					# Go to ${HOME}
+

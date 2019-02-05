@@ -1,0 +1,46 @@
+# Specific exports for my Macbook Pro
+
+# Defining the color scheme for ls
+# http://osxdaily.com/2012/02/21/add-color-to-the-terminal-in-mac-os-x/
+# LSCOLORS = concatenation of pairs "fb" where f is a foreground color and b is a background color
+# a-h are colors, A-H are bold colors, x is default
+# 1. directory, 2. symbolic link, 3. socket, 4. pipe, 5. executable, 6. block special, 7. character special
+# 8. executable with setuid bit set, 9. executable with setgid bit set
+# 10. directory writable to others, with sticky bit, 11. directory writable to others, without sticky bit
+# default is LSCOLORS = "exfxcxdxbxegedabagacad"
+export LSCOLORS=ExFxBxDxCxegedabagacad
+
+
+# Add some new directory environment variables
+export TYPE_DIR=~/Documents/Projecten/Typesetten
+
+
+# Enable OpenMPI
+export TMPDIR=/tmp
+
+
+# Enable libint
+export LIBINTROOT=/usr/local/libint/2.3.1
+export LIBINT_DATA_PATH=${LIBINTROOT}/share/libint/2.3.1/basis
+
+
+# Enable Eigen3
+export EIGENROOT=/opt/local/include
+
+
+# Enable Intel MKL
+export INTELROOT=/opt/intel
+export MKLROOT=${INTELROOT}/mkl
+
+
+# Enable GraphViz
+export GRAPHVIZ_DOT=/opt/local/bin/dot
+
+
+# Force clang to be used for C and C++ compiling
+export CC=/opt/local/bin/clang
+export CXX=/opt/local/bin/clang++
+
+
+# Enable Homebrew
+export BREW_PATH=~/.homebrew

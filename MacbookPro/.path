@@ -1,0 +1,21 @@
+# Specific changes to PATH for my Macbook Pro
+
+
+# Enable MacPorts: append the MacPorts executable paths to the default path.
+# The MacPorts paths are appended at the front, so the MacPorts libraries will take precedence
+export PATH=/opt/local/bin:opt/local/sbin:${PATH}
+
+# Enable Miniconda, taking precedence over MacPorts because MacPorts also installs python distributions
+export PATH="/Users/laurentlemmens/miniconda/bin:${PATH}"
+
+
+# Enable InfluxDB (installed through Homebrew)
+export PATH=${PATH}:~/.homebrew/bin
+
+# Enable Intel MKL
+export LIBRARY_PATH=${LIBRARY_PATH}:${INTELROOT}/lib:${MKLROOT}/lib
+export DYLD_LIBRARY_PATH=${LIBRARY_PATH}:${INTELROOT}/lib:${MKLROOT}/lib
+
+# Enable InfluxDB
+export INFLUXDB_CONFIG_PATH=${BREW_PATH}/etc/influxdb.conf
+

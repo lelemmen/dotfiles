@@ -1,0 +1,14 @@
+# Special functions for on my Macbook Pro
+
+# Move (a) file(s) to the trash
+function trash() {
+	mv "$@" ~/.Trash
+}
+
+# Open manpages via pdf
+function manpdf() {
+    # man -t: format output
+    # open -a: specify application -f: reads input from standard input
+    man -t "$1" | open -fa /Applications/Preview.app
+}
+
