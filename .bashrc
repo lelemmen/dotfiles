@@ -4,18 +4,12 @@ function source_if_regular_file () {
 }
 
 
-# Source all the dotfiles (order matters)
-dotfiles_dir=~/Software/.dotfiles
-for dotfile in ${dotfiles_dir}/.{exports,env,path,alias,functions,prompt}; do
-    source_if_regular_file ${dotfile}   
-done
-
-
 # Source all OS-specific dotfiles
+dotfiles_dir=~/Software/.dotfiles
 case $(uname) in
     "Darwin")
         mbp_dotfiles_dir=${dotfiles_dir}/MacbookPro
-        for mbp_dotfile in ${mbp_dotfiles_dir}/.{functions,exports,path,alias}; do
+        for mbp_dotfile in ${mbp_dotfiles_dir}/.{exports,alias,functions,path}; do
             source_if_regular_file ${mbp_dotfile}
         done 
         ;;
@@ -29,4 +23,11 @@ case $(uname) in
         echo "Unrecognized OS."
         ;;
 esac
+
+
+# Source all the general dotfiles (order matters)
+for dotfile in ${dotfiles_dir}/.{exports,env,path,alias,functions,prompt}; do
+    source_if_regular_file ${dotfile}   
+done
+
 
