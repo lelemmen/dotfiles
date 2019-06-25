@@ -12,10 +12,6 @@ export PATH="/Users/laurentlemmens/miniconda/bin:${PATH}"
 # Enable InfluxDB (installed through Homebrew)
 export PATH=${PATH}:~/.homebrew/bin
 
-# Enable Intel MKL
-export LIBRARY_PATH=${LIBRARY_PATH}:${INTELROOT}/lib:${MKLROOT}/lib
-export DYLD_LIBRARY_PATH=${LIBRARY_PATH}:${INTELROOT}/lib:${MKLROOT}/lib
-
 # Enable InfluxDB
 export INFLUXDB_CONFIG_PATH=${BREW_PATH}/etc/influxdb.conf
 

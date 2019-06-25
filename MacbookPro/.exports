@@ -19,20 +19,6 @@ export TYPE_DIR=~/Documents/Projecten/Typesetten
 export TMPDIR=/tmp
 
 
-# Enable libint
-export LIBINTROOT=/usr/local/libint/2.3.1
-export LIBINT_DATA_PATH=${LIBINTROOT}/share/libint/2.3.1/basis
-
-
-# Enable Eigen3
-export EIGENROOT=/opt/local/include
-
-
-# Enable Intel MKL
-export INTELROOT=/opt/intel
-export MKLROOT=${INTELROOT}/mkl
-
-
 # Enable GraphViz
 export GRAPHVIZ_DOT=/opt/local/bin/dot
 
