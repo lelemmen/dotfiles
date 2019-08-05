@@ -3,3 +3,6 @@
 # Enable Miniconda
 export PATH="/Users/laurentlemmens/miniconda/bin:${PATH}"
 
+# Enable MacPorts
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+
