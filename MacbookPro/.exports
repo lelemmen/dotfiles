@@ -11,10 +11,6 @@
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
 
-# Add some new directory environment variables
-export TYPE_DIR=~/Documents/Projecten/Typesetten
-
-
 # Enable OpenMPI
 export TMPDIR=/tmp
 

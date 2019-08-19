@@ -14,7 +14,5 @@ alias godot="cls ${DOTFILES_DIR}"			# Go to the dotfiles directory
 alias gotmp="cls ${PERS_TEMP_DIR}"			# Go to the personal temporary directory
 alias gosoft="cls ${SOFTWARE_DIR}"			# Go to the software directory
 alias gobin="cls ${SOFTWARE_BIN_DIR}"			# Go to my personal binary directory
-alias gotop="cls /"					# Go to the root directory
-alias gotype="cls ${TYPE_DIR}"				# Go to my typesetting directory
 alias gohome="cls ~"					# Go to ${HOME}
 

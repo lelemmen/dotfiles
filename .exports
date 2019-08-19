@@ -1,7 +1,7 @@
 # All exports
 
 export SOFTWARE_DIR=~/Software
-export SOFTWARE_BIN_DIR=${SOFTWARE_DIR}/bin
-export PERS_TEMP_DIR=${SOFTWARE_DIR}/tmp
+export SOFTWARE_BIN_DIR=~/bin
+export PERS_TEMP_DIR=~/tmp
 export DOTFILES_DIR=${SOFTWARE_DIR}/.dotfiles
 
